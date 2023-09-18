@@ -1,0 +1,53 @@
+.container {
+    width: 80%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.buttons {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+button {
+    border: 1px solid #333;  /* Border around buttons */
+    padding: 5px 15px;  /* Padding inside buttons */
+    cursor: pointer;  /* Hand cursor on hover */
+    transition: background-color 0.3s;  /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #eee;  /* Change background color on hover */
+}
+
+
+
+
+
+.employee-list {
+    border-collapse: collapse; /* Ensures borders don't double up */
+    width: 100%;
+}
+
+.employee-header,
+.employee-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333; /* Adds a border to the bottom of each row */
+}
+
+span {
+    padding: 5px 10px;
+    flex-basis: 20%;
+    border-left: 1px solid #333; /* Adds a left border to each cell */
+}
+
+span:first-child {
+    border-left: none; /* Removes left border for the first cell */
+}
+
